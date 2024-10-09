@@ -25,8 +25,5 @@
   .scale-up-animation {
     animation: scale-up 1s ease-out;
   }
-  .tippy-box[data-theme~='custom']{
-    background-color: #f43f5e;
-    color: white;
-  }
+ 
 }

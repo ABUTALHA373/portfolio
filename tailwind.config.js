@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}",
+    "./**/*.{html,js}",
+    "./*.html"
+  ],
+
   theme: {
     screens: {
       sm: '641px', // Change the width for the sm breakpoint
