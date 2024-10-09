@@ -594,12 +594,12 @@ video {
 
 @keyframes scale-up {
   0% {
-    transform: scale(1);
+    transform: scale(0.7);
     opacity: 0.6;
   }
 
   100% {
-    transform: scale(1.4);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -894,11 +894,6 @@ video {
 .size-3{
   width: 0.75rem;
   height: 0.75rem;
-}
-
-.size-6{
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .size-7{
@@ -2298,6 +2293,10 @@ video {
   line-height: 1.25rem;
 }
 
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
@@ -2862,6 +2861,10 @@ video {
 
   .md\:h-screen{
     height: 100vh;
+  }
+
+  .md\:h-24{
+    height: 6rem;
   }
 
   .md\:grid-cols-2{
