@@ -11,7 +11,7 @@
 
 
 * {
-  font-family: "inter", sans-serif;
+  font-family: "Tilt Neon", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -19,25 +19,43 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #e3e3e3;
+  background: #cfcfcf;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #949494;
+  background: var(--primary);
 }
-header{
-background-image: url(../images/hero/04.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
+
+header {
+  background-image: url(../images/hero/05.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media (min-width: 769px) {
+header {
+    background-image: url(../images/hero/04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 .btn-shadow{
   box-shadow: 0 0 20px var(--primary);
 }
 .btn-shadow:hover{
+  box-shadow: none;
+}
+
+.pr-shadow{
+  box-shadow: 0 0 20px var(--primary);
+}
+.pr-shadow:hover{
   box-shadow: none;
 }
 

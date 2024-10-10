@@ -9,6 +9,7 @@
     <script src="./src/js/ls.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.3.0/dist/dotlottie-player.mjs"></script>
     <title>Abu Talha || Web developer</title>
 </head>
 
@@ -20,9 +21,10 @@
         </div>
     </div>
 
-    <header
+    <!-- section header  -->
+    <header id="sec-header"
         class="relative h-[80vh] md:h-screen  border-b bg-transparent top-0 border-gray-300 shadow-sm z-0 flex flex-col">
-        <div id="overlay" class="z-10 backdrop-blur-[2px] sm:backdrop-blur-none absolute  inset-0"></div>
+        <div id="overlay" class="z-10 md:backdrop-blur-none absolute  inset-0"></div>
         <nav class="container mx-auto relative z-40 py-4">
             <div class="h-16 flex justify-between items-center">
                 <div>
@@ -30,12 +32,13 @@
                             alt="abutalha-logo"></a>
                 </div>
                 <div class="hidden gap-4 text-center md:flex">
-                    <a href="#" class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Home</a>
-                    <a href="#s2"
+                    <a href="index.html"
+                        class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Home</a>
+                    <a href="#sec-about"
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">About</a>
-                    <a href="#"
+                    <a href="#sec-projects"
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Project</a>
-                    <a href="#"
+                    <a href="#sec-contact"
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Contact</a>
                 </div>
                 <div class="md:flex flex-row gap-2 hidden">
@@ -83,12 +86,13 @@
                 class="container block md:hidden  overflow-hidden transition-all duration-300 absolute left-0 top-full w-full"
                 style="height: 0px;">
                 <div class=" bg-white p-1">
-                    <a href="#" class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Home</a>
-                    <a href="#s2"
+                    <a href="index.html"
+                        class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Home</a>
+                    <a href="#sec-about"
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">About</a>
-                    <a href="#"
+                    <a href="#sec-projects"
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Project</a>
-                    <a href="#"
+                    <a href="#sec-contact"
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Contact</a>
                 </div>
                 <div class="bg-white p-4 border-t border-primary">
@@ -127,16 +131,17 @@
         <div id="hero" class="container mx-auto z-30 relative flex-grow flex justify-center items-center h-full">
             <div class="w-full md:grid md:grid-cols-2">
                 <div class="text-center md:text-left">
-                    <!-- <h5 class="text-white font-tilt text-xl">Hello I'm </h5> -->
-                    <h1 class="font-tilt font-bold text-white text-6xl sm:text-7xl  mb-1 sm:mb-3 z-30 tracking-wide">Abu
+                    <!-- <h5 class="text-white  text-xl">Hello I'm </h5> -->
+                    <h1 class="font-afcad font-bold text-white text-6xl sm:text-7xl  mb-1 sm:mb-3 z-30 tracking-wide">
+                        Abu
                         Talha
                     </h1>
-                    <h4 class="text-white font-tilt text-xl sm:text-2xl leading-5 font-semibold">I'm a <span
-                            class="text-primary font-tilt text-xl sm:text-2xl leading-5 font-semibold"
+                    <h4 class="text-white font-afcad text-xl sm:text-2xl leading-5 font-semibold">I'm a <span
+                            class="text-primary font-afcad text-xl sm:text-2xl leading-5 font-semibold"
                             id="element"></span></h4>
                     <div class="mt-4 sm:mt-6 flex justify-center md:justify-start gap-5">
                         <a href="#"
-                            class="btn-shadow bg-transparent border border-primary px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm font-semibold hover:text-white text-primary hover:bg-primary group inline-flex items-center">Contact<svg
+                            class="btn-shadow bg-transparent border border-primary px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm  hover:text-white text-primary hover:bg-primary group inline-flex items-center">Contact<svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                                 stroke="currentColor"
                                 class="size-3 ml-1 stroke-primary group-hover:stroke-white transition-all group-hover:translate-y-1">
@@ -145,7 +150,7 @@
                             </svg>
                         </a>
                         <a href="#"
-                            class="bg-primary border border-primary px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm font-semibold text-white group inline-flex items-center">Projects<svg
+                            class="bg-primary border border-primary px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm  text-white group inline-flex items-center">Projects<svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                                 stroke="currentColor"
                                 class="size-3 ml-1 stroke-white group-hover:stroke-white transition-all group-hover:translate-x-1">
@@ -160,6 +165,233 @@
         </div>
     </header>
 
+    <!-- section about -->
+    <section class="bg-white" id="sec-about">
+        <div class="container mx-auto pb-12">
+            <h2
+                class="pt-12 pb-2 m-0 font-afcad font-semibold text-primary text-center text-3xl sm:text-5xl sm:mb-3 z-30 tracking-wide">
+                About & Expertise</h2>
+            <div class="grid gap-16 md:grid-cols-2">
+                <div class="flex items-center justify-center"><dotlottie-player autoplay loop playMode="normal"
+                        src="./src/images/animation/devani.lottie" class="max-w-[28rem]">
+                    </dotlottie-player></div>
+                <div class="md:pt-20">
+                    <div class="block">
+                        <div class="flex sm:block justify-center">
+                            <div class="tab inline-flex border mb-4 border-primary">
+                                <button
+                                    class="tablinks font-tilt bg-primary px-3 py-2  font- text-white group inline-flex items-center"
+                                    onclick="openCity(event, 'about_me')">About Me</button>
+                                <button
+                                    class="tablinks font-tilt bg-transparent px-3 py-2  font- text-primary hover:text-white hover:bg-primary group inline-flex items-center transition duration-300"
+                                    onclick="openCity(event, 'skills')">Skills</button>
+                                <button
+                                    class="tablinks font-tilt bg-transparent px-3 py-2  font- text-primary hover:text-white hover:bg-primary group inline-flex items-center transition duration-300"
+                                    onclick="openCity(event, 'education')">Education</button>
+                            </div>
+                        </div>
+                        <div class="r">
+                            <div id="about_me" class="tabcontent">
+                                <p class="text-base text-justify">Hi, I'm <strong>Abu TALHA</strong>, a web developer
+                                    passionate about
+                                    crafting
+                                    responsive, user-friendly
+                                    websites. I specialize in building
+                                    modern web applications with a focus on clean code, optimized performance, and
+                                    seamless user
+                                    experiences. With a deep
+                                    understanding of PHP, Laravel, JavaScript, and Tailwind CSS, I create dynamic,
+                                    secure, and
+                                    efficient web solutions
+                                    tailored to meet specific needs.<br>
+                                    <br>
+                                    I'm always exploring the latest trends and technologies in web development,
+                                    continuously
+                                    improving my skills to deliver
+                                    top-quality results. Let's collaborate and bring your ideas to life!
+                                </p>
+                            </div>
+                            <div id="skills" class="tabcontent hidden">
+                                <div
+                                    class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 grid-flow-col auto-cols-max">
+                                    <div class="">
+                                        <h2
+                                            class="font-tilt font-semibold text-primary text-center sm:text-left text-xl ">
+                                            Tools</h2>
+                                        <ul class="">
+                                            <li class="sm:block flex justify-center items-center gap-2">HTML</li>
+                                            <li class="sm:block flex justify-center items-center gap-2">CSS</li>
+                                            <li class=" sm:block flex justify-center items-center gap-2">Tailwind CSS
+                                            </li>
+                                            <li class="sm:block flex justify-center items-center gap-2">PHP</li>
+                                            <li class=" sm:block flex justify-center items-center gap-2">Laravel</li>
+                                        </ul>
+                                    </div>
+                                    <div class="">
+                                        <h2
+                                            class="font-tilt font-semibold text-primary text-center sm:text-left text-xl ">
+                                            Tools</h2>
+                                        <ul class="">
+                                            <li class="sm:block flex justify-center items-center gap-2">HTML</li>
+                                            <li class="sm:block flex justify-center items-center gap-2">CSS</li>
+                                            <li class=" sm:block flex justify-center items-center gap-2">Tailwind CSS
+                                            </li>
+                                            <li class="sm:block flex justify-center items-center gap-2">PHP</li>
+                                            <li class=" sm:block flex justify-center items-center gap-2">Laravel</li>
+                                        </ul>
+                                    </div>
+                                    <div class="">
+                                        <h2
+                                            class="font-tilt font-semibold text-primary text-center sm:text-left text-xl ">
+                                            Tools</h2>
+                                        <ul class="">
+                                            <li class="sm:block flex justify-center items-center gap-2">HTML</li>
+                                            <li class="sm:block flex justify-center items-center gap-2">CSS</li>
+                                            <li class=" sm:block flex justify-center items-center gap-2">Tailwind CSS
+                                            </li>
+                                            <li class="sm:block flex justify-center items-center gap-2">PHP</li>
+                                            <li class=" sm:block flex justify-center items-center gap-2">Laravel</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="education" class="tabcontent hidden">
+                                <p>Bachelor of Sciences
+                                    in Computer Science & Engineering</p>
+                                <h2 class="font-tilt font-semibold text-primary text-xl ">Green University of Bangladesh
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section services -->
+    <section class="bg-gray-100" id="sec-services">
+        <div class="container mx-auto pb-12">
+            <h2
+                class="pt-12 pb-2 m-0 font-afcad font-semibold text-primary text-center text-3xl sm:text-5xl sm:mb-3 z-30 tracking-wide">
+                Services
+            </h2>
+            <div class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- card -->
+                <div class=" flex-grow bg-white rounded-lg px-8 py-12 shadow-sm group">
+                    <!-- icon-rounded  -->
+                    <div
+                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200">
+                        <div class="">
+                            <svg class="group-hover:flip transform duration-1000" width="44" height="44"
+                                viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.682 3.66663H14.3187C7.64533 3.66663 3.66699 7.64496 3.66699 14.3183V29.6633C3.66699 36.355 7.64533 40.3333 14.3187 40.3333H29.6637C36.337 40.3333 40.3153 36.355 40.3153 29.6816V14.3183C40.3337 7.64496 36.3553 3.66663 29.682 3.66663ZM29.7003 33.4583C27.6287 33.4583 25.942 31.7716 25.942 29.7C25.942 28.49 26.5287 27.4266 27.427 26.73C26.657 24.7133 24.732 23.32 22.5687 23.3933L18.792 23.4116H18.7737C17.6553 23.4116 16.592 23.0816 15.6937 22.5133V26.2166C17.087 26.7666 18.077 28.1233 18.077 29.7C18.077 31.7716 16.3903 33.4583 14.3187 33.4583C12.247 33.4583 10.5603 31.7716 10.5603 29.7C10.5603 28.105 11.5503 26.7666 12.9437 26.2166V18.2416C11.5503 17.6 10.5603 16.2066 10.5603 14.575C10.5603 12.3566 12.3753 10.5416 14.5937 10.5416C16.812 10.5416 18.627 12.3566 18.627 14.575C18.627 16.3716 17.4353 17.875 15.8037 18.4066C16.1703 19.745 17.3803 20.68 18.7737 20.68C18.7737 20.68 18.7737 20.68 18.792 20.68L22.5687 20.6616C22.587 20.6616 22.587 20.6616 22.6053 20.6616C25.9787 20.6616 29.0037 22.8066 30.1037 25.9966C31.992 26.1983 33.477 27.775 33.477 29.7183C33.4587 31.7716 31.772 33.4583 29.7003 33.4583Z"
+                                    fill="white"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    </p>
+                </div>
+                <!-- card -->
+                <div class=" flex-grow bg-white rounded-lg px-8 py-12 shadow-sm group">
+                    <!-- icon-rounded  -->
+                    <div
+                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200">
+                        <div class="">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.3517 7.61665L15.3929 4.05375C14.2651 3.03868 13.7012 2.53114 13.0092 2.26562L13 5.00011C13 7.35713 13 8.53564 13.7322 9.26787C14.4645 10.0001 15.643 10.0001 18 10.0001H21.5801C21.2175 9.29588 20.5684 8.71164 19.3517 7.61665Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10 22H14C17.7712 22 19.6569 22 20.8284 20.8284C22 19.6569 22 17.7712 22 14V13.5629C22 12.6901 22 12.0344 21.9574 11.5001H18L17.9051 11.5001C16.808 11.5002 15.8385 11.5003 15.0569 11.3952C14.2098 11.2813 13.3628 11.0198 12.6716 10.3285C11.9803 9.63726 11.7188 8.79028 11.6049 7.94316C11.4998 7.16164 11.4999 6.19207 11.5 5.09497L11.5092 2.26057C11.5095 2.17813 11.5166 2.09659 11.53 2.01666C11.1214 2 10.6358 2 10.0298 2C6.23869 2 4.34315 2 3.17157 3.17157C2 4.34315 2 6.22876 2 10V14C2 17.7712 2 19.6569 3.17157 20.8284C4.34315 22 6.22876 22 10 22ZM10.9697 15.4697C11.2626 15.1768 11.7374 15.1768 12.0303 15.4697L13.0303 16.4697C13.3232 16.7626 13.3232 17.2374 13.0303 17.5303L12.0303 18.5303C11.7374 18.8232 11.2626 18.8232 10.9697 18.5303C10.6768 18.2374 10.6768 17.7626 10.9697 17.4697L11.4393 17L10.9697 16.5303C10.6768 16.2374 10.6768 15.7626 10.9697 15.4697ZM10.7022 14.2633C10.8477 13.8755 10.6512 13.4432 10.2633 13.2978C9.8755 13.1523 9.44319 13.3488 9.29775 13.7367L7.79775 17.7367C7.65231 18.1245 7.84882 18.5568 8.23666 18.7022C8.6245 18.8477 9.05681 18.6512 9.20225 18.2633L10.7022 14.2633ZM7.53033 13.4697C7.82322 13.7626 7.82322 14.2374 7.53033 14.5303L7.06066 15L7.53033 15.4697C7.82322 15.7626 7.82322 16.2374 7.53033 16.5303C7.23744 16.8232 6.76256 16.8232 6.46967 16.5303L5.46967 15.5303C5.17678 15.2374 5.17678 14.7626 5.46967 14.4697L6.46967 13.4697C6.76256 13.1768 7.23744 13.1768 7.53033 13.4697Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    </p>
+                </div>
+                <!-- card -->
+                <div class=" flex-grow bg-white rounded-lg px-8 py-12 shadow-sm group">
+                    <!-- icon-rounded  -->
+                    <div
+                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200">
+                        <div class="">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM9.94 13.27C9.26 14.29 8.32 15.12 7.22 15.67C7.12 15.72 7 15.75 6.89 15.75C6.61 15.75 6.35 15.6 6.22 15.34C6.03 14.97 6.18 14.52 6.56 14.33C7.43 13.9 8.17 13.24 8.7 12.44C8.88 12.17 8.88 11.83 8.7 11.56C8.16 10.76 7.42 10.1 6.56 9.67C6.18 9.49 6.03 9.04 6.22 8.66C6.4 8.29 6.85 8.14 7.22 8.33C8.32 8.88 9.26 9.71 9.94 10.73C10.46 11.5 10.46 12.5 9.94 13.27ZM17 15.75H13C12.59 15.75 12.25 15.41 12.25 15C12.25 14.59 12.59 14.25 13 14.25H17C17.41 14.25 17.75 14.59 17.75 15C17.75 15.41 17.41 15.75 17 15.75Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    </p>
+                </div>
+                <!-- card -->
+                <div
+                    class=" flex-grow  bg-white rounded-lg px-8 py-12 shadow-sm group  lg:col-span-1 lg:col-start-2 xl:col-start-auto">
+                    <!-- icon-rounded  -->
+                    <div
+                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200 ">
+                        <div class="">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447ZM13.4881 6.44591C13.8882 6.55311 14.1256 6.96437 14.0184 7.36447L11.4302 17.0237C11.323 17.4238 10.9117 17.6613 10.5116 17.5541C10.1115 17.4468 9.8741 17.0356 9.98131 16.6355L12.5695 6.97624C12.6767 6.57614 13.088 6.3387 13.4881 6.44591ZM14.9697 8.46967C15.2626 8.17678 15.7374 8.17678 16.0303 8.46967L16.2387 8.67801C16.874 9.3133 17.4038 9.84308 17.7678 10.3202C18.1521 10.8238 18.4216 11.3559 18.4216 12C18.4216 12.6441 18.1521 13.1762 17.7678 13.6798C17.4038 14.1569 16.874 14.6867 16.2387 15.322L16.0303 15.5303C15.7374 15.8232 15.2626 15.8232 14.9697 15.5303C14.6768 15.2374 14.6768 14.7626 14.9697 14.4697L15.1412 14.2981C15.8229 13.6164 16.2797 13.1574 16.5753 12.7699C16.8577 12.3998 16.9216 12.1843 16.9216 12C16.9216 11.8157 16.8577 11.6002 16.5753 11.2301C16.2797 10.8426 15.8229 10.3836 15.1412 9.70191L14.9697 9.53033C14.6768 9.23744 14.6768 8.76257 14.9697 8.46967ZM7.96986 8.46967C8.26275 8.17678 8.73762 8.17678 9.03052 8.46967C9.32341 8.76257 9.32341 9.23744 9.03052 9.53033L8.85894 9.70191C8.17729 10.3836 7.72052 10.8426 7.42488 11.2301C7.14245 11.6002 7.07861 11.8157 7.07861 12C7.07861 12.1843 7.14245 12.3998 7.42488 12.7699C7.72052 13.1574 8.17729 13.6164 8.85894 14.2981L9.03052 14.4697C9.32341 14.7626 9.32341 15.2374 9.03052 15.5303C8.73762 15.8232 8.26275 15.8232 7.96986 15.5303L7.76151 15.322C7.12617 14.6867 6.59638 14.1569 6.23235 13.6798C5.84811 13.1762 5.57861 12.6441 5.57861 12C5.57861 11.3559 5.84811 10.8238 6.23235 10.3202C6.59638 9.84308 7.12617 9.31331 7.76151 8.67801L7.96986 8.46967Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, repudiandae nam repellendus, quo
+        perferendis tenetur quaerat est consequuntur enim laborum nostrum perspiciatis, eveniet voluptatibus dolorem
+        sequi quos architecto. Optio, id animi sapiente voluptatem alias culpa. Magni, eum optio? Dignissimos
+        consequuntur animi iure, tempore repellendus, tenetur beatae debitis distinctio numquam illum amet optio
+        temporibus provident unde obcaecati placeat ratione? Obcaecati, alias, blanditiis numquam beatae et totam
+        officia vero ab quis inventore iure dolorum similique dignissimos illo eaque eius placeat voluptatibus fugiat
+        perferendis possimus tempora animi quidem asperiores. Totam iusto ducimus dolores quaerat expedita, officiis rem
+        maxime, repellat animi obcaecati, quidem tempora quis perferendis illo accusantium vero tempore id
+        necessitatibus iste. Voluptate quia, ducimus optio velit dignissimos error facilis atque quasi incidunt
+        reprehenderit aliquam autem in quisquam saepe voluptas labore omnis doloribus nihil pariatur? Cumque quia optio
+        recusandae qui earum, culpa necessitatibus nihil reiciendis officia, repellendus iure exercitationem dolores
+        quos excepturi a molestiae nisi unde sunt odio maxime, magnam sed beatae rem eligendi! Distinctio libero numquam
+        dolore qui facere animi, veritatis voluptate impedit repudiandae ea esse eveniet, officiis dolorum tenetur
+        officia illo doloremque, at est nulla amet accusantium. Quisquam expedita sunt facilis adipisci similique autem
+        earum. Ab repellendus labore consequatur velit corporis, quibusdam laboriosam! Perspiciatis nihil, excepturi
+        similique autem fugit voluptatibus debitis magnam modi maiores, quos praesentium pariatur dignissimos iure
+        adipisci? Optio, vel deleniti esse maiores odio corporis dolorem a consectetur voluptatibus eaque? Explicabo
+        unde saepe error fugiat labore reiciendis nemo laboriosam consectetur numquam doloremque voluptas incidunt
+        accusamus quia, hic quo est. Aut aliquam accusamus consequuntur voluptas aperiam facere, ratione commodi? Nobis
+        eum aspernatur amet numquam ea. Suscipit, possimus sint explicabo libero assumenda repellendus expedita illum
+        ratione quibusdam dolorum placeat, commodi quaerat, quam quo nisi ea alias. Voluptates quaerat voluptatem nemo
+        obcaecati praesentium repellendus eveniet dolorum aliquam nesciunt vel possimus fugit totam cum, tempore quas
+        corrupti assumenda facilis vero quod sint necessitatibus in, exercitationem numquam! Quidem quasi corrupti nulla
+        in veritatis cum incidunt libero assumenda aliquid debitis repellat repudiandae aspernatur saepe quibusdam
+        adipisci voluptates ad nemo eligendi aut, velit et magnam nihil. Modi, suscipit debitis eligendi sint commodi
+        architecto quia quis ratione voluptatem perspiciatis amet deserunt nisi reiciendis molestias, dolorem qui
+        assumenda quae obcaecati ducimus, asperiores sapiente temporibus earum cupiditate. Veritatis minima aliquid
+        veniam quibusdam odio suscipit sapiente ipsa, eum corrupti. Veniam dicta ea sunt? Voluptatem accusantium,
+        molestiae alias placeat corporis quo corrupti! Voluptas in eos illo mollitia consequuntur temporibus sit est,
+        quas, ab, illum facilis maiores iusto. Facere ipsum nemo natus quisquam voluptate quis deserunt, facilis
+        repellat cumque amet molestiae eaque ducimus vel officia beatae repellendus quod dolor aspernatur quaerat
+        voluptatibus corrupti nulla debitis? Nihil nostrum voluptatem dolore praesentium omnis sapiente tempore? Illum
+        ad deleniti corrupti eius tempora perferendis dolor suscipit illo eos ducimus soluta sit veniam quidem
+        cupiditate, praesentium hic quibusdam dolore magni provident! Vitae, minus culpa. Ad fuga accusantium delectus,
+        asperiores accusamus tempora odio, rem a libero culpa, nihil quia. Et ipsam dolores qui eius dolor deserunt
+        obcaecati corporis minus, quibusdam architecto totam ea illo eligendi inventore accusantium quidem!</p>
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script>
         new TypeIt("#element", {
@@ -195,6 +427,27 @@
             delay: 200,
             theme: 'custom',
         });
+
+        function openCity(evt, cityName) {
+            // Hide all tabcontent
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.add("hidden");
+            }
+
+            // Remove active class from all tablinks
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("bg-primary", "text-white");
+                tablinks[i].classList.add("bg-transparent", "text-primary", "hover:bg-primary", "hover:text-white");
+            }
+
+            // Show the current tab, and add active class to the button
+            document.getElementById(cityName).classList.remove("hidden");
+            evt.currentTarget.classList.remove("bg-transparent", "text-primary", "hover:bg-primary", "hover:text-white");
+            evt.currentTarget.classList.add("bg-primary", "text-white");
+        }
     </script>
 
     <script src="./src/js/main.js"></script>
