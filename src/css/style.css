@@ -28,7 +28,7 @@
 }
 
 header {
-  background-image: url(../images/hero/05.png);
+  background-image: url(../images/hero/06.png);
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -55,9 +55,9 @@ header {
 .pr-shadow{
   box-shadow: 0 0 20px var(--primary);
 }
-.pr-shadow:hover{
+/* .pr-shadow:hover{
   box-shadow: none;
-}
+} */
 
 /* Custom tooltip styles */
 .tippy-box[data-theme~='custom'] {

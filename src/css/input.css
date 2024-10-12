@@ -30,5 +30,24 @@
   .scale-up-animation {
     animation: scale-up 1s ease-out;
   }
+
+  .shad:hover{
+    box-shadow: 0 0 20px #888;
+  }
+  .sky-shadow{
+    box-shadow: 0 0 20px #0EA5E9;
+  }
+  .fuchsia-shadow{
+    box-shadow: 0 0 20px #D946EF;
+  }
+  .green-shadow{
+    box-shadow: 0 0 20px #22C55E;
+  }
+  .orange-shadow{
+    box-shadow: 0 0 20px #F97316;
+  }
+
+
+  /* up there */
  
 }

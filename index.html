@@ -23,9 +23,11 @@
 
     <!-- section header  -->
     <header id="sec-header"
-        class="relative h-[80vh] md:h-screen  border-b bg-transparent top-0 border-gray-300 shadow-sm z-0 flex flex-col">
-        <div id="overlay" class="z-10 md:backdrop-blur-none absolute  inset-0"></div>
+        class="relative h-[80vh]  md:h-screen  border-b bg-transparent top-0 border-gray-300 shadow-sm z-0 flex flex-col">
+        <div id="overlay" class="z-10 backdrop-blur-sm md:backdrop-blur-none absolute  inset-0"></div>
+        <!-- navbar -->
         <nav class="container mx-auto relative z-40 py-4">
+            <!-- big screen  -->
             <div class="h-16 flex justify-between items-center">
                 <div>
                     <a href="index.html"><img src="./src/images/logo/title-logo.png" class="h-12 w-full"
@@ -82,6 +84,7 @@
                     </svg>
                 </div>
             </div>
+            <!-- small screen / collapsible menu  -->
             <div id="collapsible-menu"
                 class="container block md:hidden  overflow-hidden transition-all duration-300 absolute left-0 top-full w-full"
                 style="height: 0px;">
@@ -128,6 +131,7 @@
                 </div>
             </div>
         </nav>
+        <!-- hero items  -->
         <div id="hero" class="container mx-auto z-30 relative flex-grow flex justify-center items-center h-full">
             <div class="w-full md:grid md:grid-cols-2">
                 <div class="text-center md:text-left">
@@ -167,10 +171,12 @@
 
     <!-- section about -->
     <section class="bg-white" id="sec-about">
-        <div class="container mx-auto pb-12">
+        <div class="container mx-auto py-20">
+            <!-- section title   -->
             <h2
-                class="pt-12 pb-2 m-0 font-afcad font-semibold text-primary text-center text-3xl sm:text-5xl sm:mb-3 z-30 tracking-wide">
+                class="py-2 m-0 font-afcad font-semibold text-primary text-center text-3xl sm:text-5xl sm:mb-3 z-30 tracking-wide">
                 About & Expertise</h2>
+            <!-- section items  -->
             <div class="grid gap-16 md:grid-cols-2">
                 <div class="flex items-center justify-center"><dotlottie-player autoplay loop playMode="normal"
                         src="./src/images/animation/devani.lottie" class="max-w-[28rem]">
@@ -270,17 +276,19 @@
 
     <!-- section services -->
     <section class="bg-gray-100" id="sec-services">
-        <div class="container mx-auto pb-12">
+        <div class="container mx-auto py-20">
+            <!-- section title  -->
             <h2
-                class="pt-12 pb-2 m-0 font-afcad font-semibold text-primary text-center text-3xl sm:text-5xl sm:mb-3 z-30 tracking-wide">
+                class="py-2 m-0 font-afcad font-semibold text-primary text-center text-3xl sm:text-5xl sm:mb-3 z-30 tracking-wide">
                 Services
             </h2>
-            <div class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                <!-- card -->
-                <div class=" flex-grow bg-white rounded-lg px-8 py-12 shadow-sm group">
+            <div class="mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- card 1-->
+                <div
+                    class=" flex-grow grid grid-rows-[9rem_auto_auto_auto] bg-white rounded-lg px-8 py-12 group hover:scale-105 shad duration-200">
                     <!-- icon-rounded  -->
                     <div
-                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200">
+                        class="mx-auto w-24 h-24 rounded-full bg-orange-500 border-transparent flex justify-center items-center group-hover:shadow-none orange-shadow transform duration-200">
                         <div class="">
                             <svg class="group-hover:flip transform duration-1000" width="44" height="44"
                                 viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -290,18 +298,32 @@
                             </svg>
                         </div>
                     </div>
-                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
-                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    <h2 class="text-lg text-center text-primary font-semibold mb-2 place-self-start w-full">
+                        HTML Conversion
+                    </h2>
+                    <p class="text-center text-slate-500 font-light">Transforming your designs into pixel-perfect,
+                        responsive HTML/CSS
                     </p>
+                    <!-- arrow right -->
+                    <div class="mx-auto flex justify-center items-center place-self-end mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-8 fill-slate-500 group-hover:bg-white group-hover:fill-orange-500">
+                            <path fill-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
                 </div>
-                <!-- card -->
-                <div class=" flex-grow bg-white rounded-lg px-8 py-12 shadow-sm group">
+                <!-- card 2-->
+                <div
+                    class=" flex-grow grid grid-rows-[9rem_auto_auto_auto] bg-white rounded-lg px-8 py-12 group hover:scale-105 shad duration-200">
                     <!-- icon-rounded  -->
                     <div
-                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200">
+                        class="mx-auto w-24 h-24 rounded-full bg-green-500 border-transparent flex justify-center items-center group-hover:shadow-none green-shadow transform duration-200">
                         <div class="">
-                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:flip transform duration-1000" width="44" height="44"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M19.3517 7.61665L15.3929 4.05375C14.2651 3.03868 13.7012 2.53114 13.0092 2.26562L13 5.00011C13 7.35713 13 8.53564 13.7322 9.26787C14.4645 10.0001 15.643 10.0001 18 10.0001H21.5801C21.2175 9.29588 20.5684 8.71164 19.3517 7.61665Z"
                                     fill="white" />
@@ -311,87 +333,121 @@
                             </svg>
                         </div>
                     </div>
-                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
-                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    <h2 class="text-lg text-center text-primary font-semibold mb-2 place-self-start w-full">
+                        Tailwind &
+                        Bootstrap Development
+                    </h2>
+                    <p class="text-center text-slate-500 font-light">Crafting sleek, modern interfaces using Tailwind
+                        CSS and Bootstrap for seamless user experiences
                     </p>
+                    <!-- arrow right -->
+                    <div class="mx-auto flex justify-center items-center place-self-end mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-8 fill-slate-500 group-hover:bg-white group-hover:fill-green-500">
+                            <path fill-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
                 </div>
-                <!-- card -->
-                <div class=" flex-grow bg-white rounded-lg px-8 py-12 shadow-sm group">
+                <!-- card 3-->
+                <div
+                    class=" flex-grow grid grid-rows-[9rem_auto_auto_auto] bg-white rounded-lg px-8 py-12 group hover:scale-105 shad duration-200">
                     <!-- icon-rounded  -->
                     <div
-                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200">
+                        class="mx-auto w-24 h-24 rounded-full bg-sky-500 border-transparent flex justify-center items-center group-hover:shadow-none sky-shadow transform duration-200">
                         <div class="">
-                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:flip transform duration-1000" width="44" height="44"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM9.94 13.27C9.26 14.29 8.32 15.12 7.22 15.67C7.12 15.72 7 15.75 6.89 15.75C6.61 15.75 6.35 15.6 6.22 15.34C6.03 14.97 6.18 14.52 6.56 14.33C7.43 13.9 8.17 13.24 8.7 12.44C8.88 12.17 8.88 11.83 8.7 11.56C8.16 10.76 7.42 10.1 6.56 9.67C6.18 9.49 6.03 9.04 6.22 8.66C6.4 8.29 6.85 8.14 7.22 8.33C8.32 8.88 9.26 9.71 9.94 10.73C10.46 11.5 10.46 12.5 9.94 13.27ZM17 15.75H13C12.59 15.75 12.25 15.41 12.25 15C12.25 14.59 12.59 14.25 13 14.25H17C17.41 14.25 17.75 14.59 17.75 15C17.75 15.41 17.41 15.75 17 15.75Z"
                                     fill="white" />
                             </svg>
                         </div>
                     </div>
-                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
-                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    <h2 class="text-lg text-center text-primary font-semibold mb-2 place-self-start w-full">
+                        Laravel Development
+                    </h2>
+                    <p class="text-center text-slate-500 font-light">Building robust web applications with Laravel,
+                        turning your ideas into scalable solutions
                     </p>
+                    <!-- arrow right -->
+                    <div class="mx-auto flex justify-center items-center place-self-end mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-8 fill-slate-500 group-hover:bg-white group-hover:fill-sky-500">
+                            <path fill-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
                 </div>
-                <!-- card -->
+                <!-- card 4-->
                 <div
-                    class=" flex-grow  bg-white rounded-lg px-8 py-12 shadow-sm group  lg:col-span-1 lg:col-start-2 xl:col-start-auto">
+                    class=" flex-grow grid grid-rows-[9rem_auto_auto_auto] bg-white rounded-lg px-8 py-12 group hover:scale-105 shad duration-200 lg:col-start-2 xl:col-start-auto">
                     <!-- icon-rounded  -->
                     <div
-                        class="mx-auto mb-12 w-24 h-24 rounded-full bg-primary border-transparent flex justify-center items-center group-hover:shadow-none pr-shadow transform duration-200 ">
+                        class="mx-auto w-24 h-24 rounded-full bg-fuchsia-500 border-transparent flex justify-center items-center group-hover:shadow-none fuchsia-shadow transform duration-200">
                         <div class="">
-                            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="group-hover:flip transform duration-1000" width="44" height="44"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447ZM13.4881 6.44591C13.8882 6.55311 14.1256 6.96437 14.0184 7.36447L11.4302 17.0237C11.323 17.4238 10.9117 17.6613 10.5116 17.5541C10.1115 17.4468 9.8741 17.0356 9.98131 16.6355L12.5695 6.97624C12.6767 6.57614 13.088 6.3387 13.4881 6.44591ZM14.9697 8.46967C15.2626 8.17678 15.7374 8.17678 16.0303 8.46967L16.2387 8.67801C16.874 9.3133 17.4038 9.84308 17.7678 10.3202C18.1521 10.8238 18.4216 11.3559 18.4216 12C18.4216 12.6441 18.1521 13.1762 17.7678 13.6798C17.4038 14.1569 16.874 14.6867 16.2387 15.322L16.0303 15.5303C15.7374 15.8232 15.2626 15.8232 14.9697 15.5303C14.6768 15.2374 14.6768 14.7626 14.9697 14.4697L15.1412 14.2981C15.8229 13.6164 16.2797 13.1574 16.5753 12.7699C16.8577 12.3998 16.9216 12.1843 16.9216 12C16.9216 11.8157 16.8577 11.6002 16.5753 11.2301C16.2797 10.8426 15.8229 10.3836 15.1412 9.70191L14.9697 9.53033C14.6768 9.23744 14.6768 8.76257 14.9697 8.46967ZM7.96986 8.46967C8.26275 8.17678 8.73762 8.17678 9.03052 8.46967C9.32341 8.76257 9.32341 9.23744 9.03052 9.53033L8.85894 9.70191C8.17729 10.3836 7.72052 10.8426 7.42488 11.2301C7.14245 11.6002 7.07861 11.8157 7.07861 12C7.07861 12.1843 7.14245 12.3998 7.42488 12.7699C7.72052 13.1574 8.17729 13.6164 8.85894 14.2981L9.03052 14.4697C9.32341 14.7626 9.32341 15.2374 9.03052 15.5303C8.73762 15.8232 8.26275 15.8232 7.96986 15.5303L7.76151 15.322C7.12617 14.6867 6.59638 14.1569 6.23235 13.6798C5.84811 13.1762 5.57861 12.6441 5.57861 12C5.57861 11.3559 5.84811 10.8238 6.23235 10.3202C6.59638 9.84308 7.12617 9.31331 7.76151 8.67801L7.96986 8.46967Z"
                                     fill="white" />
                             </svg>
                         </div>
                     </div>
-                    <h2 class="text-lg text-center text-primary font-semibold mb-4">Title of Card</h2>
-                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis.
+                    <h2 class="text-lg text-center text-primary font-semibold mb-2 place-self-start w-full">
+                        Plugin Integration
+                    </h2>
+                    <p class="text-center text-slate-500 font-light">Enhancing applications with SweetAlert2, TinyMCE,
+                        Toastr, DataTables, TypeIt, and Tippy for a richer user experience
                     </p>
+                    <!-- arrow right -->
+                    <div class="mx-auto flex justify-center items-center place-self-end mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-8 fill-slate-500 group-hover:bg-white group-hover:fill-fuchsia-500">
+                            <path fill-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section projects -->
+    <section class="bg-white" id="sec-projects">
+        <div class="container mx-auto py-20">
+            <!-- section title  -->
+            <h2
+                class="py2 m-0 font-afcad font-semibold text-primary text-center text-3xl sm:text-5xl sm:mb-3 z-30 tracking-wide">
+                Services
+            </h2>
+            <div>
 
             </div>
         </div>
     </section>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, repudiandae nam repellendus, quo
-        perferendis tenetur quaerat est consequuntur enim laborum nostrum perspiciatis, eveniet voluptatibus dolorem
-        sequi quos architecto. Optio, id animi sapiente voluptatem alias culpa. Magni, eum optio? Dignissimos
-        consequuntur animi iure, tempore repellendus, tenetur beatae debitis distinctio numquam illum amet optio
-        temporibus provident unde obcaecati placeat ratione? Obcaecati, alias, blanditiis numquam beatae et totam
-        officia vero ab quis inventore iure dolorum similique dignissimos illo eaque eius placeat voluptatibus fugiat
-        perferendis possimus tempora animi quidem asperiores. Totam iusto ducimus dolores quaerat expedita, officiis rem
-        maxime, repellat animi obcaecati, quidem tempora quis perferendis illo accusantium vero tempore id
-        necessitatibus iste. Voluptate quia, ducimus optio velit dignissimos error facilis atque quasi incidunt
-        reprehenderit aliquam autem in quisquam saepe voluptas labore omnis doloribus nihil pariatur? Cumque quia optio
-        recusandae qui earum, culpa necessitatibus nihil reiciendis officia, repellendus iure exercitationem dolores
-        quos excepturi a molestiae nisi unde sunt odio maxime, magnam sed beatae rem eligendi! Distinctio libero numquam
-        dolore qui facere animi, veritatis voluptate impedit repudiandae ea esse eveniet, officiis dolorum tenetur
-        officia illo doloremque, at est nulla amet accusantium. Quisquam expedita sunt facilis adipisci similique autem
-        earum. Ab repellendus labore consequatur velit corporis, quibusdam laboriosam! Perspiciatis nihil, excepturi
-        similique autem fugit voluptatibus debitis magnam modi maiores, quos praesentium pariatur dignissimos iure
-        adipisci? Optio, vel deleniti esse maiores odio corporis dolorem a consectetur voluptatibus eaque? Explicabo
-        unde saepe error fugiat labore reiciendis nemo laboriosam consectetur numquam doloremque voluptas incidunt
-        accusamus quia, hic quo est. Aut aliquam accusamus consequuntur voluptas aperiam facere, ratione commodi? Nobis
-        eum aspernatur amet numquam ea. Suscipit, possimus sint explicabo libero assumenda repellendus expedita illum
-        ratione quibusdam dolorum placeat, commodi quaerat, quam quo nisi ea alias. Voluptates quaerat voluptatem nemo
-        obcaecati praesentium repellendus eveniet dolorum aliquam nesciunt vel possimus fugit totam cum, tempore quas
-        corrupti assumenda facilis vero quod sint necessitatibus in, exercitationem numquam! Quidem quasi corrupti nulla
-        in veritatis cum incidunt libero assumenda aliquid debitis repellat repudiandae aspernatur saepe quibusdam
-        adipisci voluptates ad nemo eligendi aut, velit et magnam nihil. Modi, suscipit debitis eligendi sint commodi
-        architecto quia quis ratione voluptatem perspiciatis amet deserunt nisi reiciendis molestias, dolorem qui
-        assumenda quae obcaecati ducimus, asperiores sapiente temporibus earum cupiditate. Veritatis minima aliquid
-        veniam quibusdam odio suscipit sapiente ipsa, eum corrupti. Veniam dicta ea sunt? Voluptatem accusantium,
-        molestiae alias placeat corporis quo corrupti! Voluptas in eos illo mollitia consequuntur temporibus sit est,
-        quas, ab, illum facilis maiores iusto. Facere ipsum nemo natus quisquam voluptate quis deserunt, facilis
-        repellat cumque amet molestiae eaque ducimus vel officia beatae repellendus quod dolor aspernatur quaerat
-        voluptatibus corrupti nulla debitis? Nihil nostrum voluptatem dolore praesentium omnis sapiente tempore? Illum
-        ad deleniti corrupti eius tempora perferendis dolor suscipit illo eos ducimus soluta sit veniam quidem
-        cupiditate, praesentium hic quibusdam dolore magni provident! Vitae, minus culpa. Ad fuga accusantium delectus,
-        asperiores accusamus tempora odio, rem a libero culpa, nihil quia. Et ipsam dolores qui eius dolor deserunt
-        obcaecati corporis minus, quibusdam architecto totam ea illo eligendi inventore accusantium quidem!</p>
+
+    <!-- section project  -->
+    <!-- section experience  -->
+    <!-- section review -->
+    <!-- section contact  -->
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script>
         new TypeIt("#element", {
