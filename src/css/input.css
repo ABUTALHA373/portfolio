@@ -48,6 +48,18 @@
   }
 
 
+  /* Custom fade-up animation */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
   /* up there */
  
 }
