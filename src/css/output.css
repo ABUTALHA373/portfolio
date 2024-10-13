@@ -796,6 +796,11 @@ video {
   height: 2rem;
 }
 
+.size-6{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .h-12{
   height: 3rem;
 }
@@ -908,6 +913,10 @@ video {
   max-width: 28rem;
 }
 
+.max-w-\[22rem\]{
+  max-width: 22rem;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
@@ -922,6 +931,10 @@ video {
 
 .list-disc{
   list-style-type: disc;
+}
+
+.list-decimal{
+  list-style-type: decimal;
 }
 
 .auto-cols-max{
@@ -1703,6 +1716,14 @@ video {
 
   .lg\:grid-rows-\[20rem_4rem\]{
     grid-template-rows: 20rem 4rem;
+  }
+
+  .lg\:grid-rows-2{
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-\[auto_auto\]{
+    grid-template-rows: auto auto;
   }
 }
 
