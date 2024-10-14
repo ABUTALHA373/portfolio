@@ -50,11 +50,11 @@ footer {
   background-attachment: fixed;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1281px) {
   header {
     background-image: url(../images/hero/04.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-attachment: fixed;
   }

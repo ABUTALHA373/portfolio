@@ -23,19 +23,20 @@
 
     <!-- section header  -->
     <header id="sec-header"
-        class="relative min-h-[45rem] md:h-screen border-b bg-transparent border-gray-300 shadow-sm z-0 flex flex-col">
-        <div id="overlay" class="z-10 backdrop-blur-sm md:backdrop-blur-none absolute inset-0"></div>
+        class="relative min-h-[45rem] lg:h-screen border-b bg-transparent border-gray-300 shadow-sm z-0 flex flex-col">
+        <!-- overlay  -->
+        <div id="overlay"
+            class="z-10 backdrop-blur-sm xl:backdrop-blur-none bg-black/30 xl:bg-transparent absolute inset-0"></div>
         <!-- navbar -->
-        <nav class="container mx-auto relative z-40 py-4">
+        <nav class="container mx-auto relative z-40 pt-8">
             <!-- big screen  -->
             <div class="h-16 flex justify-between items-center">
                 <div>
                     <a href="index.html"><img src="./src/images/logo/title-logo.png" class="h-12 w-full"
                             alt="abutalha-logo" /></a>
                 </div>
-                <div class="hidden gap-4 text-center md:flex">
-                    <a href="index.html"
-                        class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Home</a>
+                <div class="hidden gap-4 text-center lg:flex">
+                    <a href="/" class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Home</a>
                     <a href="#sec-about"
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">About</a>
                     <a href="#sec-services"
@@ -91,8 +92,7 @@
                 class="container block md:hidden overflow-hidden transition-all duration-300 absolute left-0 top-full w-full"
                 style="height: 0px">
                 <div class="bg-white p-1">
-                    <a href="index.html"
-                        class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Home</a>
+                    <a href="/" class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Home</a>
                     <a href="#sec-about"
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">About</a>
                     <a href="#sec-services"
@@ -231,13 +231,13 @@
                             <div id="skills" class="tabcontent hidden">
                                 <div class="grid grid-cols-3 xl:grid-cols-4 grid-flow-col auto-cols-max gap-2">
                                     <div class="">
-                                        <h2 class="font-tilt font-semibold text-primary text-lg md:text-xl">
+                                        <h2 class="font-tilt font-semibold text-primary text-lg lg:text-xl">
                                             Technology
                                         </h2>
                                         <ul class="">
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" fill="#E14E1D" rx="60" />
                                                         <path fill="#fff"
                                                             d="M48 38L56.6098 134.593H167.32L163.605 176.023L127.959 185.661L92.38 176.037L90.0012 149.435H57.9389L62.5236 200.716L127.951 218.888L193.461 200.716L202.244 102.655H85.8241L82.901 69.9448H205.041H205.139L208 38H48Z" />
@@ -249,9 +249,9 @@
 
                                                 </span><span>HTML</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        viewBox="0 0 256 256" fill="none" class="size-4 md:size-5">
+                                                        viewBox="0 0 256 256" fill="none" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" rx="60" fill="#0277BD" />
                                                         <path
                                                             d="M53.7527 102.651L56.6155 134.593H128.096V102.651H53.7527Z"
@@ -268,10 +268,10 @@
 
                                                 </span><span>CSS</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        viewBox="0 0 256 256" fill="none" class="size-4 md:size-5">
+                                                        viewBox="0 0 256 256" fill="none" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" rx="60" fill="#F0DB4F" />
                                                         <path
                                                             d="M67.3117 213.932L86.9027 202.076C90.6821 208.777 94.1202 214.447 102.367 214.447C110.272 214.447 115.256 211.355 115.256 199.327V117.529H139.314V199.667C139.314 224.584 124.708 235.926 103.398 235.926C84.1533 235.926 72.9819 225.959 67.3113 213.93"
@@ -283,10 +283,10 @@
 
                                                 </span><span>JavaScript</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" fill="#242938" rx="60" />
                                                         <path fill="#fff"
                                                             d="M49.158 100.246H77.566C85.904 100.316 91.946 102.72 95.692 107.454C99.438 112.188 100.674 118.654 99.402 126.852C98.908 130.598 97.812 134.272 96.116 137.876C94.49 141.48 92.23 144.73 89.332 147.628C85.798 151.302 82.018 153.634 77.99 154.624C73.962 155.614 69.792 156.108 65.482 156.108H52.762L48.734 176.248H34L49.158 100.246V100.246ZM61.56 112.33L55.2 144.13C55.624 144.2 56.048 144.236 56.472 144.236C56.966 144.236 57.462 144.236 57.956 144.236C64.74 144.306 70.394 143.636 74.916 142.222C79.438 140.738 82.478 135.58 84.032 126.746C85.304 119.326 84.032 115.05 80.216 113.92C76.47 112.79 71.772 112.26 66.118 112.33C65.27 112.4 64.458 112.436 63.68 112.436C62.974 112.436 62.232 112.436 61.454 112.436L61.56 112.33" />
@@ -298,10 +298,10 @@
 
                                                 </span><span>PHP</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" fill="#242938" rx="60" />
                                                         <g clip-path="url(#clip0_7_147)">
                                                             <path fill="#fff" fill-rule="evenodd"
@@ -318,11 +318,11 @@
 
                                                 </span><span>MySql</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span>
                                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                        viewBox="0 0 512 512" class="size-4 md:size-5"
+                                                        viewBox="0 0 512 512" class="size-4 lg:size-5"
                                                         xml:space="preserve">
                                                         <style type="text/css">
                                                             .st0 {
@@ -358,13 +358,13 @@
                                         </ul>
                                     </div>
                                     <div class="">
-                                        <h2 class="font-tilt font-semibold text-primary text-lg md:text-xl">
+                                        <h2 class="font-tilt font-semibold text-primary text-lg lg:text-xl">
                                             Framework
                                         </h2>
                                         <ul class="">
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" fill="#242938" rx="60" />
                                                         <path fill="#FF2D20" fill-rule="evenodd"
                                                             d="M215.846 78.3138C215.91 78.5572 215.944 78.8083 215.944 79.0605V118.26C215.944 118.763 215.813 119.257 215.565 119.692C215.316 120.128 214.958 120.489 214.528 120.739L182.082 139.681V177.226C182.082 178.248 181.547 179.191 180.673 179.706L112.945 219.241C112.79 219.33 112.621 219.387 112.452 219.448C112.388 219.47 112.329 219.509 112.262 219.527C111.788 219.653 111.291 219.653 110.817 219.527C110.74 219.505 110.669 219.462 110.595 219.434C110.44 219.377 110.278 219.327 110.13 219.241L42.4164 179.706C41.9862 179.455 41.6288 179.094 41.3801 178.659C41.1314 178.224 41.0003 177.729 41 177.226V59.6288C41 59.3715 41.0352 59.1214 41.0986 58.8785C41.1198 58.7963 41.1691 58.7213 41.1973 58.6391C41.2501 58.4891 41.2995 58.3355 41.377 58.1961C41.4298 58.1032 41.5073 58.0282 41.5708 57.9425C41.6518 57.8281 41.7258 57.7102 41.8209 57.6102C41.9019 57.528 42.0076 57.4673 42.0993 57.3959C42.2014 57.3101 42.293 57.2172 42.4093 57.1493H42.4128L76.2714 37.3818C76.7001 37.1317 77.1861 37 77.6807 37C78.1753 37 78.6613 37.1317 79.09 37.3818L112.949 57.1493H112.956C113.068 57.2208 113.164 57.3101 113.266 57.3923C113.357 57.4637 113.459 57.528 113.54 57.6066C113.639 57.7102 113.71 57.8281 113.794 57.9425C113.854 58.0282 113.935 58.1032 113.984 58.1961C114.065 58.339 114.111 58.4891 114.168 58.6391C114.196 58.7213 114.245 58.7963 114.266 58.8821C114.331 59.1255 114.364 59.3766 114.365 59.6288V133.079L142.579 116.606V79.0569C142.579 78.8068 142.614 78.5531 142.678 78.3138C142.703 78.228 142.748 78.153 142.777 78.0708C142.833 77.9208 142.882 77.7672 142.96 77.6278C143.013 77.5349 143.09 77.4599 143.15 77.3742C143.235 77.2598 143.305 77.1419 143.404 77.0419C143.485 76.9597 143.587 76.899 143.679 76.8275C143.784 76.7418 143.876 76.6489 143.989 76.581H143.993L177.855 56.8135C178.283 56.563 178.769 56.4311 179.264 56.4311C179.759 56.4311 180.245 56.563 180.673 56.8135L214.532 76.581C214.652 76.6525 214.743 76.7418 214.849 76.824C214.937 76.8954 215.039 76.9597 215.12 77.0383C215.219 77.1419 215.289 77.2598 215.374 77.3742C215.437 77.4599 215.515 77.5349 215.564 77.6278C215.645 77.7672 215.691 77.9208 215.747 78.0708C215.779 78.153 215.825 78.228 215.846 78.3138H215.846ZM210.3 116.606V84.0086L198.451 90.9253L182.082 100.482V133.079L210.303 116.606H210.3ZM176.441 175.572V142.954L160.34 152.279L114.361 178.888V211.813L176.441 175.572ZM46.6443 64.5769V175.572L108.717 211.81V178.891L76.289 160.281L76.2784 160.274L76.2643 160.267C76.1551 160.203 76.0635 160.11 75.9613 160.031C75.8732 159.96 75.7711 159.903 75.6936 159.824L75.6866 159.814C75.595 159.724 75.5315 159.614 75.454 159.513C75.3835 159.417 75.299 159.335 75.2426 159.235L75.2386 159.224C75.1752 159.117 75.1364 158.988 75.0906 158.867C75.0448 158.76 74.9849 158.66 74.9568 158.545V158.541C74.9216 158.406 74.9145 158.263 74.9004 158.123C74.8863 158.016 74.8581 157.909 74.8581 157.802V157.795V81.0505L58.493 71.49L46.6443 64.5805V64.5769ZM77.6842 43.1624L49.4735 59.6288L77.6772 76.0951L105.884 59.6252L77.6772 43.1624H77.6842ZM92.3551 145.926L108.721 136.373V64.5769L96.8719 71.4936L80.5029 81.0504V152.847L92.3551 145.926ZM179.264 62.5941L151.056 79.0605L179.264 95.5268L207.467 79.0569L179.264 62.5941ZM176.441 100.482L160.072 90.9253L148.224 84.0086V116.606L164.589 126.159L176.441 133.079V100.482ZM111.536 173.94L152.909 149.988L173.591 138.02L145.405 121.564L112.952 140.51L83.3743 157.777L111.536 173.94Z"
@@ -373,9 +373,9 @@
 
                                                 </span><span>Laravel</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" fill="#242938" rx="60" />
                                                         <path fill="url(#paint0_linear_2_119)" fill-rule="evenodd"
                                                             d="M83 110C88.9991 86.0009 104.001 74 128 74C164 74 168.5 101 186.5 105.5C198.501 108.501 209 104.001 218 92C212.001 115.999 196.999 128 173 128C137 128 132.5 101 114.5 96.5C102.499 93.4991 92 97.9991 83 110ZM38 164C43.9991 140.001 59.0009 128 83 128C119 128 123.5 155 141.5 159.5C153.501 162.501 164 158.001 173 146C167.001 169.999 151.999 182 128 182C92 182 87.5 155 69.5 150.5C57.4991 147.499 47 151.999 38 164Z"
@@ -392,9 +392,9 @@
 
                                                 </span><span>Tailwind CSS</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256"
                                                             fill="url(#paint0_linear_158_100)" rx="60" />
                                                         <g filter="url(#filter0_d_158_100)">
@@ -443,13 +443,13 @@
                                         </ul>
                                     </div>
                                     <div class="">
-                                        <h2 class="font-tilt font-semibold text-primary text-lg md:text-xl">
+                                        <h2 class="font-tilt font-semibold text-primary text-lg lg:text-xl">
                                             Tools
                                         </h2>
                                         <ul class="">
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" fill="#F03C2E" rx="60" />
                                                         <g clip-path="url(#clip0_7_283)">
                                                             <path fill="#fff"
@@ -465,9 +465,9 @@
 
                                                 </span><span>Git</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        fill="none" viewBox="0 0 256 256" class="size-4 md:size-5">
+                                                        fill="none" viewBox="0 0 256 256" class="size-4 lg:size-5">
                                                         <rect width="256" height="256" fill="#242938" rx="60" />
                                                         <path fill="#2489CA"
                                                             d="M33.7158 100.208C33.7158 100.208 28.9814 96.795 34.6627 92.2381L47.8994 80.402C47.8994 80.402 51.6869 76.4172 55.6915 79.8891L177.84 172.368V216.714C177.84 216.714 177.781 223.678 168.844 222.908L33.7158 100.208Z" />
@@ -481,9 +481,9 @@
 
                                                 </span><span>VSCode</span>
                                             </li>
-                                            <li class="flex items-center justify-start gap-1 text-sm md:text-base">
+                                            <li class="flex items-center justify-start gap-1 mb-1 text-sm lg:text-base">
                                                 <span><svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"
-                                                        viewBox="0 0 256 256" fill="none" class="size-4 md:size-5">
+                                                        viewBox="0 0 256 256" fill="none" class="size-4 lg:size-5">
                                                         <g clip-path="url(#clip0_36_1178)">
                                                             <path
                                                                 d="M196 0H60C26.8629 0 0 26.8629 0 60V196C0 229.137 26.8629 256 60 256H196C229.137 256 256 229.137 256 196V60C256 26.8629 229.137 0 196 0Z"
@@ -729,8 +729,12 @@
                 <!-- project card -->
                 <div
                     class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md">
-                    <div class="bg-white border-b py-2  overflow-hidden">
+                    <div class="bg-white border-b py-2  overflow-hidden relative">
                         <img class="w-full h-full object-cover" src="./src/images/hero/04.png" alt="" />
+                        <h2
+                            class="font-semibold text-3xl text-white bg-gradient-to-t from-black/40 absolute bottom-0 px-4 pb-8 ">
+                            Talha portfolio
+                            Website</h2>
                     </div>
                     <div class="bg-white flex justify-center items-center">
                         <button id="modalBtnProject1"
@@ -856,7 +860,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center items-end">
-                    <form name="contact" method="POST" netlify class="w-full">
+                    <form name="contact" method="POST" netlify class="basis-[30rem]">
                         <input type="hidden" name="form-name" value="contact">
                         <input type="hidden" name="bot-field">
 
@@ -895,8 +899,9 @@
     <footer class="relative pb-20">
         <div class=" absolute inset-0 backdrop-blur-sm">
         </div>
-        <div class="relative">
-            <svg class=" fill-gray-100 top-0 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <div class="relative -top-4">
+            <svg class="relative fill-gray-100 top-0 left-0 right-0" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320">
                 <path
                     d="M0,320L60,288C120,256,240,192,360,165.3C480,139,600,149,720,176C840,203,960,245,1080,245.3C1200,245,1320,203,1380,181.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
                 </path>
@@ -1004,6 +1009,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+    <!-- js codes -->
     <script>
         new TypeIt("#element", {
             strings: [
