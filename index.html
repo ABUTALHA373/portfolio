@@ -599,6 +599,8 @@
                 <div class="flex justify-center items-end">
                     <form name="contact" method="POST" netlify class="w-full">
                         <input type="hidden" name="form-name" value="contact">
+                        <input type="hidden" name="bot-field">
+
                         <div class="mb-1">
                             <label for="email" class="block mb-1 text-sm font-medium text-gray-900 ">Your
                                 email:</label>
@@ -827,13 +829,15 @@
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams(formData).toString(),
             })
-                .then(() =>
+                .then(() => {
                     Swal.fire({
                         icon: "success",
                         title: "Your message has been delivered.",
                         showConfirmButton: false,
                         timer: 1500
-                    }))
+                    }),
+                        myForm.reset();
+                })
                 .catch((error) => Swal.fire({
                     icon: "error",
                     title: "Something Wrong!",
