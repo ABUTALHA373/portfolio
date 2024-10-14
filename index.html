@@ -827,8 +827,19 @@
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams(formData).toString(),
             })
-                .then(() => alert("Form successfully submitted"))
-                .catch((error) => alert(error));
+                .then(() =>
+                    Swal.fire({
+                        icon: "success",
+                        title: "Your message has been delivered.",
+                        showConfirmButton: false,
+                        timer: 1500
+                    }))
+                .catch((error) => Swal.fire({
+                    icon: "error",
+                    title: "Something Wrong!",
+                    showConfirmButton: false,
+                    timer: 1500
+                }));
         };
 
         document
@@ -836,7 +847,7 @@
             .addEventListener("submit", handleSubmit);
 
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./src/js/main.js"></script>
     <script src="./src/js/modal.js"></script>
 </body>
