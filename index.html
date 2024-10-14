@@ -15,7 +15,7 @@
 
 <body>
     <div id="loading-screen" class="fixed inset-0 bg-[#07192f] flex flex-col items-center justify-center z-50">
-        <!-- Spinner -->
+        <!-- Screen Loader -->
         <div>
             <img class="h-16 md:h-24 w-full scale-up-animation" src="./src/images/logo/logo.png" alt="" />
         </div>
@@ -32,7 +32,7 @@
             <!-- big screen  -->
             <div class="h-16 flex justify-between items-center">
                 <div>
-                    <a href="index.html"><img src="./src/images/logo/title-logo.png" class="h-12 w-full"
+                    <a href="/"><img src="./src/images/logo/title-logo.png" class="h-12 w-full"
                             alt="abutalha-logo" /></a>
                 </div>
                 <div class="hidden gap-4 text-center lg:flex">
@@ -41,7 +41,7 @@
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">About</a>
                     <a href="#sec-services"
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Services</a>
-                    <a href="#sec-projects"
+                    <a href="./projects.html"
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Project</a>
                     <a href="#sec-contact"
                         class="p-1.5 rounded-md font-medium text-white hover:text-primary duration-75">Contact</a>
@@ -97,7 +97,7 @@
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">About</a>
                     <a href="#sec-services"
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Services</a>
-                    <a href="#sec-projects"
+                    <a href="./projects.html"
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Project</a>
                     <a href="#sec-contact"
                         class="p-1.5 block text-primary hover:bg-primary hover:text-white duration-75">Contact</a>
@@ -173,6 +173,7 @@
             </div>
         </div>
     </header>
+
 
     <!-- section about -->
     <section class="bg-white" id="sec-about">
@@ -728,51 +729,55 @@
             <div class="grid grid-col-1 md:grid-cols-2 gap-8">
                 <!-- project card -->
                 <div
-                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md">
-                    <div class="bg-white border-b py-2  overflow-hidden relative">
-                        <img class="w-full h-full object-cover" src="./src/images/hero/04.png" alt="" />
+                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md group">
+                    <div class="bg-white border-b overflow-hidden relative">
+                        <img class="w-full h-full object-cover" src="./src/images/porjects/myportfolio.png" alt="" />
                         <h2
-                            class="font-semibold text-3xl text-white bg-gradient-to-t from-black/40 absolute bottom-0 px-4 pb-8 ">
-                            Talha portfolio
-                            Website</h2>
+                            class="w-full font-semibold text-xl md:2xl lg:text-3xl text-white bg-gradient-to-t from-black absolute bottom-0 px-4 pb-4 pt-12 group-hover:tracking-wide duration-200">
+                            Portfolio - Abu Talha</h2>
                     </div>
                     <div class="bg-white flex justify-center items-center">
                         <button id="modalBtnProject1"
                             class="bg-transparent border border-primary px-2 py-1 hover:text-white text-primary hover:bg-primary group inline-flex items-center duration-200">Details
                         </button>
-                        <a href="#"
+                        <a href="/"
                             class="ml-2 bg-transparent border border-primary px-2 py-1 hover:text-white text-primary hover:bg-primary group inline-flex items-center duration-200">Live
                         </a>
-                        <a href="#"
+                        <a href="https://github.com/ABUTALHA373/portfolio" target="_blank"
                             class="ml-2 bg-transparent border border-primary px-2 py-1 hover:text-white text-primary hover:bg-primary group inline-flex items-center duration-200">Github
                         </a>
                     </div>
                 </div>
                 <!-- project card -->
                 <div
-                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md">
-                    <div class="bg-white border-b py-2">
-                        <img class="w-full h-full object-cover overflow-hidden" src="./src/images/hero/02.webp"
-                            alt="" />
+                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md group">
+                    <div class="bg-white border-b overflow-hidden relative">
+                        <img class="w-full h-full object-cover" src="./src/images/porjects/school-pr.png" alt="" />
+                        <h2
+                            class="w-full font-semibold text-xl md:2xl lg:text-3xl text-white bg-gradient-to-t from-black absolute bottom-0 px-4 pb-4 pt-12 group-hover:tracking-wide duration-200">
+                            Education - School Website</h2>
                     </div>
                     <div class="bg-white flex justify-center items-center">
-                        <a href="#"
+                        <a id="modalBtnProject1"
                             class="bg-transparent border border-primary px-2 py-1 hover:text-white text-primary hover:bg-primary group inline-flex items-center duration-200">Details
                         </a>
-                        <a href="#"
+                        <a href="https://abutalha373.github.io/school_education_website/" target="_blank"
                             class="ml-2 bg-transparent border border-primary px-2 py-1 hover:text-white text-primary hover:bg-primary group inline-flex items-center duration-200">Live
                         </a>
-                        <a href="#"
+                        <a href="https://github.com/ABUTALHA373/school_education_website" target="_blank"
                             class="ml-2 bg-transparent border border-primary px-2 py-1 hover:text-white text-primary hover:bg-primary group inline-flex items-center duration-200">Github
                         </a>
                     </div>
                 </div>
                 <!-- project card -->
                 <div
-                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md">
-                    <div class="bg-white border-b py-2">
-                        <img class="w-full h-full object-cover overflow-hidden"
+                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md group">
+                    <div class="bg-white border-b overflow-hidden relative">
+                        <img class="w-full h-full object-cover"
                             src="./src/images/porjects/Digital-Transformation-in-Banking-Cover.jpg" alt="" />
+                        <h2
+                            class="w-full font-semibold text-xl md:2xl lg:text-3xl text-white bg-gradient-to-t from-black absolute bottom-0 px-4 pb-4 pt-12 group-hover:tracking-wide duration-200">
+                            Talha portfolio Website Lorem, ipsum dolor.</h2>
                     </div>
                     <div class="bg-white flex justify-center items-center">
                         <a href="#"
@@ -788,10 +793,12 @@
                 </div>
                 <!-- project card -->
                 <div
-                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md">
-                    <div class="bg-white border-b py-2">
-                        <img class="w-full h-full object-cover overflow-hidden"
-                            src="./src/images/porjects/Artboard 57.png" alt="" />
+                    class="bg-white grid grid-flow-row grid-rows-[14rem_3rem] sm:grid-rows-[20rem_3rem] md:grid-rows-[14rem_3rem] lg:grid-rows-[20rem_4rem] xl:grid-rows-[24rem_4rem] border shadow-md group">
+                    <div class="bg-white border-b overflow-hidden relative">
+                        <img class="w-full h-full object-cover" src="./src/images/porjects/Artboard 57.png" alt="" />
+                        <h2
+                            class="w-full font-semibold text-xl md:2xl lg:text-3xl text-white bg-gradient-to-t from-black absolute bottom-0 px-4 pb-4 pt-12 group-hover:tracking-wide duration-200">
+                            Talha portfolio Website Lorem, ipsumdfd dolor.</h2>
                     </div>
                     <div class="bg-white flex justify-center items-center">
                         <a href="#"
@@ -806,7 +813,22 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- All work link  -->
+            <div class="text-base text-primary flex justify-end relative  mt-4"><a href="./projects.html"
+                    class="grid grid-cols-[auto_auto] gap-2"><span class="flex items-center"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-4 slide-hide-animation">
+                            <path fill-rule="evenodd"
+                                d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </span><span class="flex items-center mr-1 font-normal duration-200">All
+                        Works</span></a>
+            </div>
         </div>
     </section>
 
@@ -896,16 +918,16 @@
     </section>
 
     <!-- section footer  -->
-    <footer class="relative pb-20">
-        <div class=" absolute inset-0 backdrop-blur-sm">
+    <footer class="relative py-16">
+        <div class=" absolute inset-0 backdrop-blur-sm bg-black/40">
         </div>
-        <div class="relative -top-4">
-            <svg class="relative fill-gray-100 top-0 left-0 right-0" xmlns="http://www.w3.org/2000/svg"
+        <div class="">
+            <!-- <svg class="relative fill-gray-100 top-0 left-0 right-0" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1440 320">
                 <path
                     d="M0,320L60,288C120,256,240,192,360,165.3C480,139,600,149,720,176C840,203,960,245,1080,245.3C1200,245,1320,203,1380,181.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
                 </path>
-            </svg>
+            </svg> -->
             <div class="flex justify-center items-center flex-col relative">
                 <img src="./src/images/logo/logo-white.png" class="w-36 md:w-60 mb-6 sm:mb-10" alt="">
                 <div class="flex flex-row gap-2 mb-4">
@@ -972,25 +994,29 @@
                     </div>
                     <!-- Modal body -->
                     <div class="p-4 md:p-5 space-y-4 max-h-[30rem] md:max-h-96 overflow-x-hidden overflow-y-auto">
-                        <h4 class="text-lg font-bold text-primary">Title: Abu Talha's Portfolio</h4>
+                        <h4 class="text-lg font-bold text-primary">Title:Portfolio - Abu Talha</h4>
                         <h4 class="text-lg font-bold text-primary mt-1">Technology used:</h4>
                         <p class=" text-gray-500">
                             <span
                                 class="text-xs px-1.5 py-1 rounded-full border-primary text-white bg-primary border font-medium">HTML</span>
                             <span
-                                class="text-xs px-1.5 py-1 rounded-full border-primary text-white bg-primary border font-medium">CSS</span>
-                            <span
                                 class="text-xs px-1.5 py-1 rounded-full border-primary text-white bg-primary border font-medium">Tailwind
                                 CSS</span>
                             <span
                                 class="text-xs px-1.5 py-1 rounded-full border-primary text-white bg-primary border font-medium">JavaScript</span>
+                            <span
+                                class="text-xs px-1.5 py-1 rounded-full border-primary text-white bg-primary border font-medium">Js
+                                Plugins</span>
                         </p>
                         <h4 class="text-lg font-bold text-primary mt-1">Features:</h4>
                         <ul class="list-disc pl-6 m-0 mt-1">
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, veniam?</li>
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, veniam?</li>
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, veniam?</li>
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, veniam?</li>
+                            <li>Responsive design using Tailwind CSS</li>
+                            <li>Skills section categorized by technology, frameworks, and tools with icons</li>
+                            <li>Animation effects using CSS and Tailwind</li>
+                            <li>Integration of popular JavaScript plugins (e.g., SweetAlert2, TypeIt, lottie)</li>
+                            <li>Display of technology stack and tools using SVG icons</li>
+                            <li>Minimalist and clean layout</li>
+                            <li>Optimized for performance with a fast and lightweight structure</li>
                         </ul>
                     </div>
                     <!-- Modal footer -->

@@ -33,17 +33,10 @@
   background: var(--primary);
 }
 
+/* index page  */
 header {
   background-image: url(../images/hero/06.png);
   background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-footer {
-  background-image: url(../images/hero/06.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,6 +51,23 @@ footer {
     background-size: cover;
     background-attachment: fixed;
   }
+}
+footer {
+  background-image: url(../images/hero/06.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* projects page  */
+#sec-projects-header {
+  background-image: url(../images/hero/bgpro.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:;
+  background-attachment: fixed;
 }
 
 .btn-shadow {
