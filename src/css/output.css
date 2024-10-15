@@ -834,8 +834,8 @@ video {
   height: 0.75rem;
 }
 
-.h-64{
-  height: 16rem;
+.h-40{
+  height: 10rem;
 }
 
 .h-7{
@@ -852,10 +852,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-40{
-  height: 10rem;
 }
 
 .max-h-\[30rem\]{
@@ -1165,6 +1161,11 @@ video {
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
+.bg-slate-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .bg-slate-950\/40{
   background-color: rgb(2 6 23 / 0.4);
 }
@@ -1182,34 +1183,10 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.from-black\/60{
-  --tw-gradient-from: rgb(0 0 0 / 0.6) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-black\/80{
-  --tw-gradient-from: rgb(0 0 0 / 0.8) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-black{
   --tw-gradient-from: #000 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-slate-800{
-  --tw-gradient-to: #1e293b var(--tw-gradient-to-position);
-}
-
-.to-slate-200{
-  --tw-gradient-to: #e2e8f0 var(--tw-gradient-to-position);
-}
-
-.to-slate-50{
-  --tw-gradient-to: #f8fafc var(--tw-gradient-to-position);
 }
 
 .fill-gray-100{
@@ -1548,10 +1525,6 @@ video {
   background-color: rgb(244 63 94 / var(--tw-bg-opacity));
 }
 
-.hover\:tracking-wide:hover{
-  letter-spacing: 0.025em;
-}
-
 .hover\:text-blue-700:hover{
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
@@ -1565,10 +1538,6 @@ video {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:underline:hover{
-  text-decoration-line: underline;
 }
 
 .focus\:z-10:focus{
@@ -1631,25 +1600,8 @@ video {
   stroke: #fff;
 }
 
-.group:hover .group-hover\:text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.group:hover .group-hover\:font-medium{
-  font-weight: 500;
-}
-
-.group:hover .group-hover\:font-bold{
-  font-weight: 700;
-}
-
 .group:hover .group-hover\:tracking-wide{
   letter-spacing: 0.025em;
-}
-
-.group:hover .group-hover\:underline{
-  text-decoration-line: underline;
 }
 
 .group:hover .group-hover\:shadow-none{
@@ -1799,12 +1751,12 @@ video {
     height: 1.25rem;
   }
 
-  .lg\:h-screen{
-    height: 100vh;
-  }
-
   .lg\:h-64{
     height: 16rem;
+  }
+
+  .lg\:h-screen{
+    height: 100vh;
   }
 
   .lg\:grid-cols-2{

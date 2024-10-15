@@ -52,13 +52,13 @@ header {
     background-attachment: fixed;
   }
 }
-footer {
+/* footer {
   background-image: url(../images/hero/06.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 /* projects page  */
 #sec-projects-header {
