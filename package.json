@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.13"
   },
   "dependencies": {
-    "alpinejs": "^3.14.1"
+    "alpinejs": "^3.14.1",
+    "typeit": "^8.8.5"
   }
 }
