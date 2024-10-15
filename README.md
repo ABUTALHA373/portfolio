@@ -16,7 +16,7 @@ Check out the live website here:
 - **Custom Animations** for interactive user experience
 - Integration of popular JavaScript plugins like **SweetAlert2**, **TypeId**,**Lottie**, and **tippy**
 - Display of technology stack with SVG icons
-- Clean and optimized code for fast loading
+- Clean and optimized code for fast-loading
 
 ## Technologies Used
 
@@ -27,11 +27,6 @@ Check out the live website here:
 - **Netlify**: Hosting and continuous deployment
 
 
-## Deployment
-
-This project is deployed on **Netlify** with continuous deployment from the main branch.  
-For the latest version, visit:  
-**[https://talha373.netlify.app](https://talha373.netlify.app)**
 
 ## Let's Connect:
 <p align="center"> <a href="https://www.linkedin.com/in/abutalha373/" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a><a href="https://www.fiverr.com/abutalha373" target="_blank"><img src="https://img.shields.io/badge/fiverr-1ac16f.svg?style=for-the-badge&logo=fiverr&logoColor=white"/></a></p>
