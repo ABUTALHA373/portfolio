@@ -39,6 +39,12 @@ modal({
     modalMain: "modalBodyProject3",    // ID of the main modal
 });
 
+modal({
+    modalToggle: "modalBtnProject4",    // ID of the button to open modal
+    modalBg: "modalBgProject4",      // ID of the modal background
+    modalMain: "modalBodyProject4",    // ID of the main modal
+});
+
 
 
 
