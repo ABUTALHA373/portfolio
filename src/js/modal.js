@@ -27,11 +27,7 @@ function modal({ modalToggle, modalBg, modalMain }) {
 
 
 // project 1 modal 
-modal({
-    modalToggle: "modalBtnProject1",    // ID of the button to open modal
-    modalBg: "modalBgProject1",      // ID of the modal background
-    modalMain: "modalBodyProject1",    // ID of the main modal
-});
+
 
 modal({
     modalToggle: "modalBtnProject3",    // ID of the button to open modal
@@ -45,6 +41,11 @@ modal({
     modalMain: "modalBodyProject4",    // ID of the main modal
 });
 
+modal({
+    modalToggle: "modalBtnProject1",    // ID of the button to open modal
+    modalBg: "modalBgProject1",      // ID of the modal background
+    modalMain: "modalBodyProject1",    // ID of the main modal
+});
 
 
 
